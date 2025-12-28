@@ -3,6 +3,7 @@ import authService from "./appwrite/auth";
 import { useDispatch } from "react-redux";
 import { login, logout } from "./store/authSlice";
 import { Footer, Header } from "./Components";
+import { Outlet } from "react-router";
 
 
 const App = () => {
@@ -32,8 +33,8 @@ return (<>
   <div className="w-full block">
     <Header />
    <main>
-    {/* <outlet> */}
-     <h1 className="text-3xl font bold">This is Home page </h1>
+    <Outlet />
+     
    </main>
     <Footer />
 
